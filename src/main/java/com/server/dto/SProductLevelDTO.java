@@ -63,6 +63,14 @@ public class SProductLevelDTO implements Serializable {
 	
 	private List<String> imgUrls = new ArrayList<String>();
 	
+	private Integer curPageNO;   //
+	
+	private Integer curPageNum;
+	
+	private String orders;
+	
+	private Integer listTotal;
+	
 	public Long getId() {
 		return id;
 	}
@@ -237,6 +245,38 @@ public class SProductLevelDTO implements Serializable {
 
 	public void setImgUrls(List<String> imgUrls) {
 		this.imgUrls = imgUrls;
+	}
+
+	public Integer getCurPageNO() {
+		return curPageNO;
+	}
+
+	public void setCurPageNO(Integer curPageNO) {
+		this.curPageNO = curPageNO;
+	}
+
+	public Integer getCurPageNum() {
+		return curPageNum;
+	}
+
+	public void setCurPageNum(Integer curPageNum) {
+		this.curPageNum = curPageNum;
+	}
+
+	public String getOrders() {
+		return orders;
+	}
+
+	public void setOrders(String orders) {
+		this.orders = orders;
+	}
+
+	public Integer getListTotal() {
+		return listTotal;
+	}
+
+	public void setListTotal(Integer listTotal) {
+		this.listTotal = listTotal;
 	}
 
 }

@@ -2,7 +2,9 @@ package com.server.rpc;
 
 import java.util.List;
 
+import com.server.dto.SCurentPageDTO;
 import com.server.dto.SProductLevelDTO;
+import com.server.dto.SProductTalkDTO;
 
 /**  
 * 类说明   
@@ -14,8 +16,10 @@ public interface SProductMsService {
 
 	SProductLevelDTO getProductDetail(String prodId);
 	
-	List<SProductLevelDTO> getProductHot();
+	List<SProductLevelDTO> getProductHot(SCurentPageDTO sCurentPageDTO);
 	
-	List<SProductLevelDTO> getProductNew();
+	List<SProductLevelDTO> getProductNew(SCurentPageDTO sCurentPageDTO);
+	
+	List<SProductTalkDTO> getProductTalk(String prodId);
 	
 }
