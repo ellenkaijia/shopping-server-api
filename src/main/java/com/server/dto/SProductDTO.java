@@ -54,6 +54,16 @@ public class SProductDTO implements Serializable {
 	
 	private Integer commentCount;
 	
+	private String sortId;
+	
+	public String getSortId() {
+		return sortId;
+	}
+
+	public void setSortId(String sortId) {
+		this.sortId = sortId;
+	}
+	
 	
 	public Integer getCommentCount() {
 		return commentCount;

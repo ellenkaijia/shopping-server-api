@@ -2,7 +2,9 @@ package com.server.rpc;
 
 import java.util.List;
 
+import com.server.dto.SBandShowDTO;
 import com.server.dto.SProductLevelDTO;
+import com.server.dto.SortShowDTO;
 
 /**  
 * 类说明   
@@ -14,4 +16,7 @@ public interface ProductLevelMsService {
 
 	List<SProductLevelDTO> getProductLevelByCode(int prodTypeCode);
 	
+	List<SBandShowDTO> getProductBandAll();
+	
+	List<SortShowDTO> getSortAll();
 }

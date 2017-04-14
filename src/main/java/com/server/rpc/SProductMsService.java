@@ -22,4 +22,8 @@ public interface SProductMsService {
 	
 	List<SProductTalkDTO> getProductTalk(String prodId);
 	
+	List<SProductLevelDTO> getBandList(String bandId, SCurentPageDTO sCurentPageDTO);
+	
+	List<SProductLevelDTO> getSortList(String sortId, SCurentPageDTO sCurentPageDTO);
+	
 }

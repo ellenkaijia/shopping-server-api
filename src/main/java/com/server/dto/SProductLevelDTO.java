@@ -69,7 +69,7 @@ public class SProductLevelDTO implements Serializable {
 	
 	private String orders;
 	
-	private Integer listTotal;
+	private Integer listTotal = new Integer(0);
 	
 	public Long getId() {
 		return id;
