@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.server.dto.SBandShowDTO;
 import com.server.dto.SProductLevelDTO;
+import com.server.dto.ShopCarShowDTO;
 import com.server.dto.SortShowDTO;
 
 /**  
@@ -19,4 +20,10 @@ public interface ProductLevelMsService {
 	List<SBandShowDTO> getProductBandAll();
 	
 	List<SortShowDTO> getSortAll();
+	
+	List<ShopCarShowDTO> getShopCartList(String userId);
+	
+	boolean changeShopCartNum(String prodId, Integer num, String userId);
+	
+	boolean deleteShopCart(String prodId, String userId);
 }
