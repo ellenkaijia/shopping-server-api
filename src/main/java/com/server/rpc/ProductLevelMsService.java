@@ -26,4 +26,6 @@ public interface ProductLevelMsService {
 	boolean changeShopCartNum(String prodId, Integer num, String userId);
 	
 	boolean deleteShopCart(String prodId, String userId);
+	
+	List<SProductLevelDTO> searchForList(String keyword);
 }

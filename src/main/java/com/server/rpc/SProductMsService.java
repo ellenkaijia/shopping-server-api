@@ -26,4 +26,6 @@ public interface SProductMsService {
 	
 	List<SProductLevelDTO> getSortList(String sortId, SCurentPageDTO sCurentPageDTO);
 	
+	List<SProductLevelDTO> getMoreList(Integer more, SCurentPageDTO sCurentPageDTO);
+	
 }

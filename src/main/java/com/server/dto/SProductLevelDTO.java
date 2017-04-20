@@ -69,8 +69,19 @@ public class SProductLevelDTO implements Serializable {
 	
 	private String orders;
 	
+	private Integer buyCount;
+	
 	private Integer listTotal = new Integer(0);
 	
+	
+	public Integer getBuyCount() {
+		return buyCount;
+	}
+
+	public void setBuyCount(Integer buyCount) {
+		this.buyCount = buyCount;
+	}
+
 	public Long getId() {
 		return id;
 	}
