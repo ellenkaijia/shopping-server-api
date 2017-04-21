@@ -6,6 +6,8 @@ import java.util.Map;
 
 import com.server.dto.SAddressDTO;
 import com.server.dto.SProductLevelDTO;
+import com.server.dto.SRepairDTO;
+import com.server.dto.STalkDTO;
 import com.server.dto.SUserDTO;
 import com.server.dto.SUserOrderShowDTO;
 import com.server.dto.ShopCartDTO;
@@ -195,7 +197,7 @@ public interface UserMsService {
 	  * @param id
 	  * @return
 	  */
-	 Integer deleteAddress(Integer id);
+	 Integer deleteAddress(Long id);
 	 
 	 /**
 	  * 更新地址的状态
@@ -204,4 +206,40 @@ public interface UserMsService {
 	  * @return
 	  */
 	 Integer updateAddressStatus(String userId, Integer id);
+	 
+	 /**
+	  * 通过用户id和订单id获取
+	  * @param userId
+	  * @param orderId
+	  * @return
+	  */
+	 SAddressDTO geAddressDTOByOrderId(String userId, String orderId);
+	 
+	 /**
+	  * 通过订单的id查询信息
+	  * @param orderId
+	  * @return
+	  */
+	 List<SProductLevelDTO> getProductByOrderId(String orderId);
+	 
+	 /**
+	  * 增加保修单
+	  * @param sRepairDTO
+	  * @return
+	  */
+	 Integer addRepair(SRepairDTO sRepairDTO);
+	 
+	 /**
+	  * 增加评论
+	  * @param stalkDTO
+	  * @return
+	  */
+	 Integer addTalk(STalkDTO stalkDTO);
+	 
+	 /**
+	  * 
+	  * @param userId
+	  * @return
+	  */
+	 List<SRepairDTO> getMyRepair(String userId);
 }

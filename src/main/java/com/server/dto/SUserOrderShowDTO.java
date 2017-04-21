@@ -24,6 +24,8 @@ public class SUserOrderShowDTO implements Serializable {
 	
 	private String prodName;
 	
+	private String imgUrl;
+	
 	private BigDecimal prodPrize;
 	
 	private BigDecimal prodPrizeSum;
@@ -31,8 +33,35 @@ public class SUserOrderShowDTO implements Serializable {
 	private String dateStr;
 	
 	private Date createTime;
-
 	
+	private Integer status;
+	
+	private Integer talkStatus;
+	
+	public Integer getTalkStatus() {
+		return talkStatus;
+	}
+
+	public void setTalkStatus(Integer talkStatus) {
+		this.talkStatus = talkStatus;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+	}
+
 	public String getProdId() {
 		return prodId;
 	}
