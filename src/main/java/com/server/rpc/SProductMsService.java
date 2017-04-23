@@ -5,6 +5,7 @@ import java.util.List;
 import com.server.dto.SCurentPageDTO;
 import com.server.dto.SProductLevelDTO;
 import com.server.dto.SProductTalkDTO;
+import com.server.dto.STalkShowDTO;
 
 /**  
 * 类说明   
@@ -27,5 +28,7 @@ public interface SProductMsService {
 	List<SProductLevelDTO> getSortList(String sortId, SCurentPageDTO sCurentPageDTO);
 	
 	List<SProductLevelDTO> getMoreList(Integer more, SCurentPageDTO sCurentPageDTO);
+	
+	List<STalkShowDTO> getProductTalkList(String prodId);
 	
 }

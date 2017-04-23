@@ -242,4 +242,18 @@ public interface UserMsService {
 	  * @return
 	  */
 	 List<SRepairDTO> getMyRepair(String userId);
+	 
+	 /**
+	  * 没有购买行为的维修提交
+	  * @param sRepairDTO
+	  * @return
+	  */
+	 Integer addNoBuyRepair(SRepairDTO sRepairDTO);
+	 
+	 /**
+	  * 取得评论的个数
+	  * @param prodId
+	  * @return
+	  */
+	 Integer getProductTalkCount(String prodId);
 }

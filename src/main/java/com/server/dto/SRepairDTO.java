@@ -1,6 +1,7 @@
 package com.server.dto;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**  
@@ -37,6 +38,20 @@ public class SRepairDTO implements Serializable {
 	private Date createTime;
 	
 	private String whatProblem;
+	
+	private String dateStr;
+	
+
+	public String getDateStr() {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		dateStr = sdf.format(this.createTime);
+		return dateStr;
+	}
+
+	public void setDateStr(String dateStr) {
+		this.dateStr = dateStr;
+	}
 
 	public String getWhatProblem() {
 		return whatProblem;
